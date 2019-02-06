@@ -107,7 +107,7 @@
 		if (support)
 		{
 			// Add our triggers on native implementation
-			$('body').on('click', 'summary', function(){
+			$('body').on('click tap', 'summary', function(){
 				var details = $(this).parent();
 				setTimeout(function(){
 					if (details.prop('open'))
@@ -155,7 +155,7 @@
 			e.stopPropagation();
 		})
 
-		.on('click', 'summary', function(){
+		.on('click tap', 'summary', function(){
 			$(this).parent().trigger('toggle');
 		})
 
